@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/who', function () {
-    return "HELLO THERE";
+    return "HELLO THER";
 });
 Auth::routes();
 

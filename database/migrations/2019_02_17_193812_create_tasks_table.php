@@ -18,9 +18,9 @@ class CreateTasksTable extends Migration
             $table->string('name');
             $table->integer('project_id')->unsigned();
             $table->integer('user_id')->unsigned();
-            $table->integer('company_id')->unsigned();
-            $table->integer('days')->unsigned();
-            $table->integer('hours')->unsigned();
+            $table->integer('company_id')->unsigned()->nullable();
+            $table->integer('days')->unsigned()->nullable();
+            $table->integer('hours')->unsigned()->nullable();
 
             $table->integer('project_id')->referemces('id') -> on('projects');
             $table->integer('user_id')->referemces('id') -> on('users');
